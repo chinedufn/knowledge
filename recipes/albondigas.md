@@ -6,26 +6,26 @@
 
 ### Meatballs
 
-1 lb ground beef
-1 egg
-1 T parmesan cheese
-1 garlic clove
-1/2 C parsley
-1 T milk
-2 T breadcrumbs
-1/2 t nutmeg
-2 t salt & pepper
+- 1 lb ground beef
+- 1 egg
+- 1 T parmesan cheese
+- 1 garlic clove
+- 1/2 C parsley
+- 1 T milk
+- 2 T breadcrumbs
+- 1/2 t nutmeg
+- 2 t salt & pepper
 
 #### Sauce
 
-1/2 onion, diced
-4 tomatoes
-1/4 C tomato sauce
-1 T basil (dried)
-1/2 t olive oil
-1 t sugar
-1/2 t salt
-Parsley (garnish)
+- 1/2 onion, diced
+- 4 tomatoes
+- 1/4 C tomato sauce
+- 1 T basil (dried)
+- 1/2 t olive oil
+- 1 t sugar
+- 1/2 t salt
+- Parsley (garnish)
 
 ## Instructions
 
