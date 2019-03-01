@@ -25,9 +25,6 @@ set -g default-command "reattach-to-user-namespace -l ${SHELL}"
 # set -g @plugin 'git@github.com/user/plugin'
 # set -g @plugin 'git@bitbucket.com/user/plugin'
 
-# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run '~/.tmux/plugins/tpm/tpm'
-
 ## NAVIGATION: ############################
 
 # Switch panes
@@ -40,4 +37,7 @@ bind -n M-Right select-pane -R
 # usage: "SHIFT+arrow" (without prefix key)
 bind -n S-Left  previous-window
 bind -n S-Right next-window
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
 ```
