@@ -2,4 +2,4 @@
 
 This is where I keep track of miscellaneous concepts, techniques and approaches that I want to come back to later.
 
-Inspired by [yoshuawuts/knowledge](https://github.com/yoshuawuyts/knowledge)
+Notes are usually brief. Quick notes and links that I jot down in case I need to remember them in the future.
