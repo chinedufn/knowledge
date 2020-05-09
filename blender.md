@@ -22,3 +22,9 @@ You'll typically want to rig one side, and then flip it and automatically rename
 - CTRL+Click on tail of bone to select it
 
 [Weight painting tutorial](https://www.youtube.com/watch?v=rG82fogtuCg)
+
+## Book Hooks
+
+`Ctrl` + `H` to parent the bezier curve point to the control bone
+
+https://blender.stackexchange.com/a/34289
