@@ -234,3 +234,8 @@ run = ['move-node-to-workspace X']
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
 run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'com.agilebits.onepassword7'
+run = ['layout floating']
+
