@@ -239,3 +239,6 @@ run = ['layout floating']
 if.app-id = 'com.agilebits.onepassword7'
 run = ['layout floating']
 
+[[on-window-detected]]
+if.app-id = 'com.apple.Dictionary'
+run = ['layout floating']
