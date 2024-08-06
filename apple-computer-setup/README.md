@@ -165,5 +165,5 @@ git clone git@github.com:afia/afia.git documentation  #  <--- for writing docume
 ### Aerospace
 
 ```sh
-cp ~/Development/knowledge/afia/apple-computer-setup/aerospace.toml ~/.aerospace.toml
+cp ~/Development/knowledge/apple-computer-setup/aerospace.toml ~/.aerospace.toml
 ```
