@@ -77,6 +77,12 @@ cd ~/Development/opensource
 # Follow the instructions in the README
 ```
 
+## .zshrc
+
+```
+setopt interactivecomments
+```
+
 ## Install Applications and Tools
 
 ```sh
@@ -92,9 +98,6 @@ brew install --cask iterm2
 
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# Install git
-brew install git
 
 # Install tmux
 brew install tmux

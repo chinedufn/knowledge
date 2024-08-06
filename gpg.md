@@ -3,15 +3,12 @@
 https://medium.com/@timmywil/sign-your-commits-on-github-with-gpg-566f07762a43
 
 ```
-brew install gnupg gpg-agent pinentry-mac
+brew install gnupg pinentry-mac
 gpg --gen-key
 
 # Add key to git config
 gpg --list-keys
 git config --global user.signingkey <PUBKEY>
-
-# Add key to GitHub
-
 ```
 
 - Add key to GitHub
