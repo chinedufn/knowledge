@@ -67,7 +67,7 @@ git clone git@github.com:chinedufn/knowledge.git
 cd knowledge
 ```
 
-# Setup Vim
+## Setup Vim
 
 ```sh
 open https://github.com/chinedufn/vim
@@ -75,6 +75,22 @@ mkdir -p ~/Development/opensource
 cd ~/Development/opensource
 
 # Follow the instructions in the README
+```
+
+# Bash Profile
+
+```
+# Git
+alias gs="git status"
+alias gpoh="git push origin head"
+alias gpch="git push cfn head"
+alias gpm="git pull origin master"
+alias gb="git branch"
+alias gc="git commit"
+# Print out the commits made since the tip of the master branch. (gnc stands for -> git new commits)
+alias gnc="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master..head"
+# Prevent git checkout from auto-completing branches on origin because it's almost never what I'm intending
+export GIT_COMPLETION_CHECKOUT_NO_GUESS=1
 ```
 
 ## Install Applications and Tools
