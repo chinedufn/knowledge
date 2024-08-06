@@ -2,6 +2,81 @@
 
 Steps to set up a new personal Apple machine.
 
+## System Settings
+
+#### Trackpad Settigs
+
+- `System Settings > Trackpad > Point & Click`
+  - Enable `Tap to click`
+
+- `System Settings > Trackpad > Scroll & Zoom`
+  - Disable natural scrolling
+
+#### Dock Settings
+
+`System Settings > Desktop & Dock`
+
+- Enable `Automatically hide and show the Dock`
+
+#### Keyboard Settings
+
+- `System Settings > Keyboard > Keyboard Shortcuts > Modifier Keys`
+  - Map `Caps Lock` to `Escape`
+
+
+#### Notifications
+
+- Disable notifications for:
+  - `Messages`
+  - `Screen Time`
+  - `Tips`
+  - `Facetime`
+
+## Setup GitHub
+
+Set the new computer up to have access to GitHub.
+
+```sh
+# Press `Enter` to store in the default location.
+# Can skip when asked about generating a passphrase.
+ssh-keygen -o -t rsa -C "frankie.nwafili@gmail.com"
+```
+
+- Log into GitHub on the new machine
+- Go to settings
+- Go to SSH and GPG keys
+- Click `New SSH key`
+- In the public key's name include the machine's model and any other information of note
+- `cat ~/.ssh/id_rsa.pub`
+- Paste the public key into GitHub
+
+## Steup XCode command line developer tools
+
+```
+# Needed to use `git`
+xcode-select --install
+```
+
+## Download Knowledge Repository
+
+```sh
+cd ~
+mkdir Development
+cd Development
+git clone git@github.com:chinedufn/knowledge.git
+cd knowledge
+```
+
+# Setup Vim
+
+```sh
+open https://github.com/chinedufn/vim
+mkdir -p ~/Development/opensource
+cd ~/Development/opensource
+
+# Follow the instructions in the README
+```
+
 ## Install Applications and Tools
 
 ```sh
@@ -46,6 +121,19 @@ brew install --cask jetbrains-toolbox
 brew install --cask nikitabobko/tap/aerospace
 ```
 
+## Setting up Git
+
+#### Git user configuration
+```sh
+git config --global user.name "Chinedu Francis Nwafili"
+git config --global user.email "frankie.nwafili@gmail.com"
+git config --global user.username "chinedufn"
+```
+
+#### Git GPG key
+
+Follow instructions in `gpg.md` for setting up a GPG key
+
 ## Download Source Code
 
 ```sh
@@ -66,9 +154,6 @@ git clone git@github.com:afia/afia.git afia           #  <--- for writing code
 git clone git@github.com:afia/afia.git code-review    #  <--- for reviewing other peoples' code
 git clone git@github.com:afia/afia.git documentation  #  <--- for writing documentation
 
-# Download Knowledge
-cd ~/Development
-git clone git@github.com:chinedufn/knowledge.git
 ```
 
 ## Setup Applications
