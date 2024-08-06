@@ -20,3 +20,33 @@ Removing it from git history can do the trick (make sure that's what we really w
 ```
 git lfs export -h
 ```
+
+## Shell Aliases
+
+#### Git aliases
+
+```sh
+git config --global alias.ch checkout
+git config --global alias.cm commit
+git config --global alias.br branch
+git config --global alias.st status
+git config --global alias.last log -1 HEAD
+```
+
+#### Shell Aliases
+
+```
+# Inside .zshrc
+
+# Git
+alias gs="git status"
+alias gpoh="git push origin head"
+alias gpch="git push cfn head"
+alias gpm="git pull origin master"
+alias gb="git branch"
+alias gc="git commit"
+# Print out the commits made since the tip of the master branch. (gnc stands for -> git new commits)
+alias gnc="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master..head"
+# Prevent git checkout from auto-completing branches on origin because it's almost never what I'm intending
+export GIT_COMPLETION_CHECKOUT_NO_GUESS=1
+```

@@ -77,22 +77,6 @@ cd ~/Development/opensource
 # Follow the instructions in the README
 ```
 
-# Bash Profile
-
-```
-# Git
-alias gs="git status"
-alias gpoh="git push origin head"
-alias gpch="git push cfn head"
-alias gpm="git pull origin master"
-alias gb="git branch"
-alias gc="git commit"
-# Print out the commits made since the tip of the master branch. (gnc stands for -> git new commits)
-alias gnc="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master..head"
-# Prevent git checkout from auto-completing branches on origin because it's almost never what I'm intending
-export GIT_COMPLETION_CHECKOUT_NO_GUESS=1
-```
-
 ## Install Applications and Tools
 
 ```sh
@@ -137,7 +121,7 @@ brew install --cask jetbrains-toolbox
 brew install --cask nikitabobko/tap/aerospace
 ```
 
-## Setting up Git
+## Set up Git
 
 #### Git user configuration
 ```sh
@@ -145,6 +129,10 @@ git config --global user.name "Chinedu Francis Nwafili"
 git config --global user.email "frankie.nwafili@gmail.com"
 git config --global user.username "chinedufn"
 ```
+
+#### Aliases
+
+Set up the aliases in the `git.md` documentation.
 
 #### Git GPG key
 
