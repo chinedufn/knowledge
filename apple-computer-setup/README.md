@@ -23,6 +23,9 @@ Steps to set up a new personal Apple machine.
 - `System Settings > Keyboard > Keyboard Shortcuts > Modifier Keys`
   - Map `Caps Lock` to `Escape`
 
+#### Control Center
+
+- Enable Show Bluetooth in Menu Bar
 
 #### Notifications
 
@@ -81,6 +84,9 @@ cd ~/Development/opensource
 
 ```
 setopt interactivecomments
+
+# autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 ```
 
 ## Install Applications and Tools
@@ -122,6 +128,9 @@ brew install --cask jetbrains-toolbox
 
 # Install AeroSpace
 brew install --cask nikitabobko/tap/aerospace
+
+# Install autojump
+brew install autojump
 ```
 
 ## Set up Git
@@ -150,8 +159,7 @@ Follow instructions in `gpg.md` for setting up a GPG key
 
 # Make directory for source code
 cd ~
-mkdir Development
-mkdir Development/opensource
+mkdir -p Development/opensource
 
 # Download Afia
 cd ~/Development
