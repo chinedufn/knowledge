@@ -87,6 +87,10 @@ setopt interactivecomments
 
 # autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
+# Shell Complations
+autoload -U compinit
+compinit -i
 ```
 
 ## Install Applications and Tools
@@ -131,6 +135,9 @@ brew install --cask nikitabobko/tap/aerospace
 
 # Install autojump
 brew install autojump
+
+# Install GitHub CLI
+brew install gh
 ```
 
 ## Set up Git
