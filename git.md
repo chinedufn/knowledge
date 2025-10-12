@@ -23,10 +23,16 @@ git lfs export -h
 
 ## Shell Aliases
 
-#### Git aliases
+#### Git config
 
 ```sh
 git config --global core.editor "vim -u ~/.chinedufn-vim/.vimrc"
+git config --global core.commentChar "$"
+```
+
+#### Git aliases
+
+```sh
 git config --global alias.ch checkout
 git config --global alias.cm commit
 git config --global alias.br branch
