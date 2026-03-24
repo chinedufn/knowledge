@@ -138,6 +138,9 @@ brew install autojump
 
 # Install GitHub CLI
 brew install gh
+
+# Install tree
+brew install tree
 ```
 
 ## Set up Git
