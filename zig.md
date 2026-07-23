@@ -30,8 +30,36 @@ zig build test-standalone -Dskip-release -Dtest-filter=webassembly_custom_sectio
 After making a change to the compiler, run:
 ```
 ./build/stage3/bin/zig build -p build/stage4 -Denable-llvm -Dno-lib
-./build/stage4/bin/zig build test-standalone -Dtest-filter=webassembly_custom_sections -Dskip-release 
+./build/stage4/bin/zig build test-standalone -Dtest-filter=wasm_custom_sections -Dskip-release 
 ```
 
 Now the stage4 compiler will be using the latest code.
+
+### Flow
+
+- `Astgen.zig` converts AST nodes to untyped `Zir` instructions
+- `Sema.zig` processes untyped `Zir` instructions into typed `Air` instructions
+
+
+### Terminology
+
+- `Zir` = `Zir Intermediate Representation`
+  - `lib/std/zig/Zir.zig`
+- `Sema` = `Semantic Analysis`
+  - `src/Sema.zig`
+  - state used for compiling a `Zir` into `Air`
+  - transforms untyped ZIR instructions into semantically-analyzed AIR instructions
+  - Does type checking, comptime control flow, and safety-check generation.
+- `Air` = `Analyzed Intermediate Representation`
+  - `src/Air.zig`
+  - Each function gets its own `Air` instance
+- `Nav` = `Name Addressable Value`
+  - Defined in `InternPool.zig` `pub const Nav =`
+  - Represents a global value with a name and address.
+- `Zcu` = `Zig Compilation Unit`
+  - `src/Zcu.zig`
+  - Compilation of all Zig source code is represented by one `Zcu`.
+- `Compilation`
+  - `src/Compilation.zig`
+  - A compilation contains one zig compilation unit, or zero if there is no Zig code to compile
 
